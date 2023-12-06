@@ -3,7 +3,7 @@ using GaragensDR.Infra.Shared.Bases.Interface;
 
 namespace GaragensDR.Domain.Interfaces.Repositories
 {
-    public interface IFormaPagamentoRepository : IBaseRepository<FormaPagamento>
+    public interface IFormaPagamentoRepository : IBaseRepository<FormaPagamentoDTO>
     {
     }
 }

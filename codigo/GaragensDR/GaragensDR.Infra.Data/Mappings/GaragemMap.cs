@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GaragensDR.Infra.Data.Mappings
 {
-    public class GaragemMap : BaseMap<Garagem>
+    public class GaragemMap : BaseMap<GaragemDTO>
     {
-        public override void Configure(EntityTypeBuilder<Garagem> builder)
+        public override void Configure(EntityTypeBuilder<GaragemDTO> builder)
         {
             builder.ToTable("Perfis");
 

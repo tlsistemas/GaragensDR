@@ -5,7 +5,7 @@ using GaragensDR.Infra.Shared.Bases;
 
 namespace GaragensDR.Infra.Data.Repositories
 {
-    public class FormaPagamentoRepository : BaseRepository<FormaPagamento>, IFormaPagamentoRepository
+    public class FormaPagamentoRepository : BaseRepository<FormaPagamentoDTO>, IFormaPagamentoRepository
     {
         private readonly SqlContext _context;
 

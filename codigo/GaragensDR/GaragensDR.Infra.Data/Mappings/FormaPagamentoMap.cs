@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GaragensDR.Infra.Data.Mappings
 {
-    public class FormaPagamentoMap : BaseMap<FormaPagamento>
+    public class FormaPagamentoMap : BaseMap<FormaPagamentoDTO>
     {
-        public override void Configure(EntityTypeBuilder<FormaPagamento> builder)
+        public override void Configure(EntityTypeBuilder<FormaPagamentoDTO> builder)
         {
             builder.ToTable("Perfis");
 

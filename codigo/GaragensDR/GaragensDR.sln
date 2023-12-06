@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Shared", "4.2 - Share
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Infra.Shared", "GaragensDR.Infra.Shared\GaragensDR.Infra.Shared.csproj", "{C222344A-2F94-4EB8-B321-2E25CA3D925B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Application", "GaragensDR.Application\GaragensDR.Application.csproj", "{4438CE62-80CE-4439-B2C9-3910286D4FDC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C222344A-2F94-4EB8-B321-2E25CA3D925B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C222344A-2F94-4EB8-B321-2E25CA3D925B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C222344A-2F94-4EB8-B321-2E25CA3D925B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{9FDE8F64-876A-44AC-ADF0-783CDD75448D} = {2AA3B7F2-D508-4D93-9504-FB257205C999}
 		{931B1285-C54D-4D5B-BE98-9C998A0C5CF0} = {A4AB79ED-F096-452E-B93B-260A3A0BF903}
 		{C222344A-2F94-4EB8-B321-2E25CA3D925B} = {931B1285-C54D-4D5B-BE98-9C998A0C5CF0}
+		{4438CE62-80CE-4439-B2C9-3910286D4FDC} = {0FA09C89-4312-4088-AC39-1E988A86BB79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78DB5BED-3BDF-4954-8C06-BB11AEE20C16}

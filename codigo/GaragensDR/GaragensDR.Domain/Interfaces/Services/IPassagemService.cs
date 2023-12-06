@@ -3,7 +3,7 @@ using GaragensDR.Infra.Shared.Bases.Interface;
 
 namespace GaragensDR.Domain.Interfaces.Services
 {
-    public interface IPassagemService : IBaseService<Passagem>
+    public interface IPassagemService : IBaseService<PassagemDTO>
     {
     }
 }

@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GaragensDR.Infra.Data.Mappings
 {
-    public class PassagemMap : BaseMap<Passagem>
+    public class PassagemMap : BaseMap<PassagemDTO>
     {
-        public override void Configure(EntityTypeBuilder<Passagem> builder)
+        public override void Configure(EntityTypeBuilder<PassagemDTO> builder)
         {
             builder.ToTable("Perfis");
 
