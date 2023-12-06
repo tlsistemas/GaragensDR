@@ -9,5 +9,6 @@ namespace GaragensDR.Domain.DTO
         public string Preco1aHora { get; set; }
         public string PrecoHorasExtra { get; set; }
         public string PrecoMensalista { get; set; }
+
     }
 }

@@ -15,9 +15,9 @@ namespace GaragensDR.Infra.Data.Contexts
 
         public SqlContext(DbContextOptions<SqlContext> options) : base(options) { }
 
-        public DbSet<GaragemDTO> Garagens{ get; set; }
-        public DbSet<PassagemDTO> Passagens { get; set; }
-        public DbSet<FormaPagamentoDTO> FormasPagamento { get; set; }
+        public DbSet<Garagem> Garagens{ get; set; }
+        public DbSet<Passagem> Passagens { get; set; }
+        public DbSet<FormaPagamento> FormasPagamento { get; set; }
 
 
         public IDbContextTransaction Transaction { get; private set; }

@@ -5,7 +5,7 @@ using GaragensDR.Infra.Shared.Bases;
 
 namespace GaragensDR.Infra.Data.Repositories
 {
-    public class PassagemRepository : BaseRepository<PassagemDTO>, IPassagemRepository
+    public class PassagemRepository : BaseRepository<Passagem>, IPassagemRepository
     {
         private readonly SqlContext _context;
 

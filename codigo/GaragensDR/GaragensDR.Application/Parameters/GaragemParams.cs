@@ -5,20 +5,20 @@ using System.Linq.Expressions;
 
 namespace GaragensDR.Application.Parameters
 {
-    public class GaragemParams : BaseParams<GaragemDTO>
+    public class GaragemParams : BaseParams<Garagem>
     {
         public string Key { get; set; } = "";
         public string Codigo { get; set; } = "";
         public string Nome { get; set; } = "";
         public bool? Ativo { get; set; } = null;
 
-        public override Expression<Func<GaragemDTO, bool>> Filter()
+        public override Expression<Func<Garagem, bool>> Filter()
         {
-            var predicate = PredicateBuilder.New<GaragemDTO>();
+            var predicate = PredicateBuilder.New<Garagem>();
 
             if (!string.IsNullOrWhiteSpace(Key))
             {
-                var obj = new GaragemDTO { Key = Key };
+                var obj = new Garagem { Key = Key };
                 predicate = predicate.And(p => p.Id.Equals(obj.Id));
             }
 

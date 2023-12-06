@@ -19,15 +19,6 @@ namespace GaragensDR.Infra.Shared.Bases
                 .IsRequired()
                 .HasColumnName("Id");
 
-            builder.Property(c => c.CriadoPor)
-                .IsRequired()
-                .HasColumnName("CriadoPor")
-                .HasColumnType("int");
-
-            builder.Property(c => c.AtualizadoPor)
-                .HasColumnName("AtualizadoPor")
-                .HasColumnType("int");
-
             builder.Property(c => c.Ativo)
                 .IsRequired()
                 .HasColumnName("Ativo")

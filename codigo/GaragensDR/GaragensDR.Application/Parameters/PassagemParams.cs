@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace GaragensDR.Application.Parameters
 {
-    public class PassagemParams : BaseParams<PassagemDTO>
+    public class PassagemParams : BaseParams<Passagem>
     {
         public string Key { get; set; } = "";
         public string Garagem { get; set; } = "";
@@ -18,13 +18,13 @@ namespace GaragensDR.Application.Parameters
         public string PrecoTotal { get; set; } = "";
         public bool? Ativo { get; set; } = null;
 
-        public override Expression<Func<PassagemDTO, bool>> Filter()
+        public override Expression<Func<Passagem, bool>> Filter()
         {
-            var predicate = PredicateBuilder.New<PassagemDTO>();
+            var predicate = PredicateBuilder.New<Passagem>();
 
             if (!string.IsNullOrWhiteSpace(Key))
             {
-                var obj = new PassagemDTO { Key = Key };
+                var obj = new Passagem { Key = Key };
                 predicate = predicate.And(p => p.Id.Equals(obj.Id));
             }
 

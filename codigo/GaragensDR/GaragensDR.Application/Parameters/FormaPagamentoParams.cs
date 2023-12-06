@@ -5,19 +5,19 @@ using System.Linq.Expressions;
 
 namespace GaragensDR.Application.Parameters
 {
-    public class FormaPagamentoParams : BaseParams<FormaPagamentoDTO>
+    public class FormaPagamentoParams : BaseParams<FormaPagamento>
     {
         public string Key { get; set; } = "";
         public string Codigo { get; set; } = "";
         public bool? Ativo { get; set; } = null;
 
-        public override Expression<Func<FormaPagamentoDTO, bool>> Filter()
+        public override Expression<Func<FormaPagamento, bool>> Filter()
         {
-            var predicate = PredicateBuilder.New<FormaPagamentoDTO>();
+            var predicate = PredicateBuilder.New<FormaPagamento>();
 
             if (!string.IsNullOrWhiteSpace(Key))
             {
-                var obj = new FormaPagamentoDTO { Key = Key };
+                var obj = new FormaPagamento { Key = Key };
                 predicate = predicate.And(p => p.Id.Equals(obj.Id));
             }
 

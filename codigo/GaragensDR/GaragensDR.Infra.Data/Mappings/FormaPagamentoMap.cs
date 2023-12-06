@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GaragensDR.Infra.Data.Mappings
 {
-    public class FormaPagamentoMap : BaseMap<FormaPagamentoDTO>
+    public class FormaPagamentoMap : BaseMap<FormaPagamento>
     {
-        public override void Configure(EntityTypeBuilder<FormaPagamentoDTO> builder)
+        public override void Configure(EntityTypeBuilder<FormaPagamento> builder)
         {
-            builder.ToTable("Perfis");
+            builder.ToTable("FormasPagamento");
 
             builder.Property(c => c.Ativo)
                  .IsRequired()
@@ -26,15 +26,6 @@ namespace GaragensDR.Infra.Data.Mappings
                 .HasColumnName("DataAtualizacao")
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getdate()");
-
-            builder.Property(c => c.CriadoPor)
-                .IsRequired()
-                .HasColumnName("CriadoPor")
-                .HasColumnType("int");
-
-            builder.Property(c => c.AtualizadoPor)
-                .HasColumnName("AtualizadoPor")
-                .HasColumnType("int");
         }
     }
 }

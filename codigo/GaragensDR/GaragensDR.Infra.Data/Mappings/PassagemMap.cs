@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace GaragensDR.Infra.Data.Mappings
 {
-    public class PassagemMap : BaseMap<PassagemDTO>
+    public class PassagemMap : BaseMap<Passagem>
     {
-        public override void Configure(EntityTypeBuilder<PassagemDTO> builder)
+        public override void Configure(EntityTypeBuilder<Passagem> builder)
         {
-            builder.ToTable("Perfis");
+            builder.ToTable("Passagens");
 
             builder.Property(c => c.Ativo)
                  .IsRequired()
@@ -26,15 +26,6 @@ namespace GaragensDR.Infra.Data.Mappings
                 .HasColumnName("DataAtualizacao")
                 .HasColumnType("datetime")
                 .HasDefaultValueSql("getdate()");
-
-            builder.Property(c => c.CriadoPor)
-                .IsRequired()
-                .HasColumnName("CriadoPor")
-                .HasColumnType("int");
-
-            builder.Property(c => c.AtualizadoPor)
-                .HasColumnName("AtualizadoPor")
-                .HasColumnType("int");
         }
     }
 }

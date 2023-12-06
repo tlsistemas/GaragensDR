@@ -33,13 +33,5 @@ namespace GaragensDR.Infra.Shared.Bases
         public Boolean Ativo { get; set; }
         public DateTime DataCriacao { get; set; }
         public DateTime DataAtualizacao { get; set; }
-        public int CriadoPor { get; set; }
-        public int AtualizadoPor { get; set; }
-        [NotMapped]
-        [Newtonsoft.Json.JsonIgnore]
-        public int RowNum { get; set; }
-        [NotMapped]
-        [Newtonsoft.Json.JsonIgnore]
-        public int RowSum { get; set; }
     }
 }
