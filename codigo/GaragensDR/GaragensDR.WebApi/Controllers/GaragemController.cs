@@ -47,6 +47,23 @@ namespace GaragensDR.WebApi.Controllers
         [ProducesResponseType(typeof(BaseResponse<bool>), 200)]
         [ProducesResponseType(typeof(BaseResponse<bool>), 400)]
         [SwaggerOperation(OperationId = "GaragemCriar")]
+        [Route("Lista")]
+        public async Task<IActionResult> Post([FromBody] List<GaragemDTO> GaragemDTO)
+        {
+            return Ok(await _applicationServiceGaragem.CriarComLista(GaragemDTO));
+        }
+
+        //POST api/values
+        /// <summary>
+        /// Criar Garagem
+        /// </summary>
+        /// <response code="200">Garagem criada com sucesso.</response>
+        /// <response code="400">
+        /// </response>
+        [HttpPost]
+        [ProducesResponseType(typeof(BaseResponse<bool>), 200)]
+        [ProducesResponseType(typeof(BaseResponse<bool>), 400)]
+        [SwaggerOperation(OperationId = "GaragemCriar")]
         public async Task<IActionResult> Post([FromBody] GaragemDTO GaragemDTO)
         {
             return Ok(await _applicationServiceGaragem.Criar(GaragemDTO));

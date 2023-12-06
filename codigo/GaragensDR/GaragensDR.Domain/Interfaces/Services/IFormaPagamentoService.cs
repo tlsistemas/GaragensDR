@@ -5,5 +5,6 @@ namespace GaragensDR.Domain.Interfaces.Services
 {
     public interface IFormaPagamentoService : IBaseService<FormaPagamento>
     {
+        Task<int> AdicionarLista(List<FormaPagamento> lista);
     }
 }

@@ -11,6 +11,8 @@ namespace GaragensDR.Application.Interfaces
 
         Task<BaseResponse<GaragemViewModel>> Criar(GaragemDTO GaragemDto);
 
+        Task<BaseResponse<bool>> CriarComLista(List<GaragemDTO> garagemDto);
+
         Task<BaseResponse<GaragemViewModel>> Atualizar(GaragemDTO GaragemDto);
 
         Task<BaseResponse<GaragemViewModel>> Excluir(string GaragemKey);

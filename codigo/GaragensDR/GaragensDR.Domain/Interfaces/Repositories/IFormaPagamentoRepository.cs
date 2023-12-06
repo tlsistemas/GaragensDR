@@ -5,5 +5,6 @@ namespace GaragensDR.Domain.Interfaces.Repositories
 {
     public interface IFormaPagamentoRepository : IBaseRepository<FormaPagamento>
     {
+        Task<int> AdicionarLista(List<FormaPagamento> lista);
     }
 }

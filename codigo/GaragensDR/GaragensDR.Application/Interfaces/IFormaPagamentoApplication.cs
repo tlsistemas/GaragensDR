@@ -9,6 +9,8 @@ namespace GaragensDR.Application.Interfaces
     {
         Task<BaseResponse<IEnumerable<FormaPagamentoViewModel>>> Listar(FormaPagamentoParams parametros);
 
+        Task<BaseResponse<bool>> CriarComLista(List<FormaPagamentoDTO> formaPagamentoDTO);
+
         Task<BaseResponse<FormaPagamentoViewModel>> Criar(FormaPagamentoDTO formaPagamentoDto);
 
         Task<BaseResponse<FormaPagamentoViewModel>> Atualizar(FormaPagamentoDTO formaPagamentoDto);

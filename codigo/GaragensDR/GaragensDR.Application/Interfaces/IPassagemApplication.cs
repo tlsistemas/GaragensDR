@@ -9,6 +9,8 @@ namespace GaragensDR.Application.Interfaces
     {
         Task<BaseResponse<IEnumerable<PassagemViewModel>>> Listar(PassagemParams parametros);
 
+        Task<BaseResponse<bool>> CriarComLista(List<PassagemDTO> passagemDto);
+
         Task<BaseResponse<PassagemViewModel>> Criar(PassagemDTO PassagemDto);
 
         Task<BaseResponse<PassagemViewModel>> Atualizar(PassagemDTO PassagemDto);

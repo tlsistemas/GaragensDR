@@ -37,6 +37,23 @@ namespace GaragensDR.WebApi.Controllers
 
         //POST api/values
         /// <summary>
+        /// Criar Formas de Pagamento
+        /// </summary>
+        /// <response code="200">Formas de Pagamento criada com sucesso.</response>
+        /// <response code="400">
+        /// </response>
+        [HttpPost]
+        [ProducesResponseType(typeof(BaseResponse<bool>), 200)]
+        [ProducesResponseType(typeof(BaseResponse<bool>), 400)]
+        [SwaggerOperation(OperationId = "FormaPagamentoCriar")]
+        [Route("Lista")]
+        public async Task<IActionResult> Post([FromBody] List<FormaPagamentoDTO> GaragemDTO)
+        {
+            return Ok(await _applicationServiceFormaPagamento.CriarComLista(GaragemDTO));
+        }
+
+        //POST api/values
+        /// <summary>
         /// Criar Forma de Pagamento
         /// </summary>
         /// <response code="200">Forma de Pagamento criado com sucesso.</response>

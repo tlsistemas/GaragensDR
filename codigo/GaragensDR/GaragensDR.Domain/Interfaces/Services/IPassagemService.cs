@@ -5,5 +5,6 @@ namespace GaragensDR.Domain.Interfaces.Services
 {
     public interface IPassagemService : IBaseService<Passagem>
     {
+        Task<int> AdicionarLista(List<Passagem> lista);
     }
 }

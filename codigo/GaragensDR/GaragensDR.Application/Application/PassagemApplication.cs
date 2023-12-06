@@ -73,6 +73,39 @@ namespace GaragensDR.Application.Application
             return response;
         }
 
+        public async Task<BaseResponse<bool>> CriarComLista(List<PassagemDTO> passagemDto)
+        {
+            var response = new BaseResponse<bool>();
+
+            try
+            {
+                if (passagemDto is null)
+                {
+                    response.AddErrors(string.Format(Events.SYSTEM_ERROR_NOT_HANDLED.Message));
+                    return response;
+                }
+                var listaGaragens = _mapper.Map<List<Passagem>>(passagemDto);
+                await _service.AdicionarLista(listaGaragens);
+                response.Data = true;
+                response.Error = false;
+                response.SetStatusCode(HttpStatusCode.OK);
+            }
+            catch (Exception ex)
+            {
+                response.Data = false;
+                response.AddError(ex.Message);
+                response.AddError(ex.StackTrace);
+                _logger.LogCritical((int)EEventId.Application, ex, Events.SYSTEM_ERROR_NOT_HANDLED.Message, passagemDto);
+                response.Error = true;
+                response.SetStatusCode(HttpStatusCode.InternalServerError);
+            }
+            finally
+            {
+                _service.DisposeAsync();
+            }
+            return response;
+        }
+
         public async Task<BaseResponse<PassagemViewModel>> Criar(PassagemDTO passagemDto)
         {
             var response = new BaseResponse<PassagemViewModel>();

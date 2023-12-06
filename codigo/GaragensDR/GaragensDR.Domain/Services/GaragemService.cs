@@ -14,6 +14,11 @@ namespace GaragensDR.Domain.Services
             _repository = repository;
         }
 
+        public async Task<int> AdicionarLista(List<Garagem> lista)
+        {
+            return await _repository.AdicionarLista(lista);
+        }
+
         public void Dispose()
         {
             _repository.Dispose();

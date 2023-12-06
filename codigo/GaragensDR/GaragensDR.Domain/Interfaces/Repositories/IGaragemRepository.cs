@@ -5,5 +5,6 @@ namespace GaragensDR.Domain.Interfaces.Repositories
 {
     public interface IGaragemRepository : IBaseRepository<Garagem>
     {
+        Task<int> AdicionarLista(List<Garagem> lista);
     }
 }

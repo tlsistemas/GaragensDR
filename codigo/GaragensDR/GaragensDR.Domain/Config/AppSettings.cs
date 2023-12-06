@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.Diagnostics;
 
-namespace AgroControle.Domain.Config
+namespace GaragensDR.Domain.Config
 {
     public class AppSettings
     {
