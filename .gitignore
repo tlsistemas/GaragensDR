@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/codigo/GaragensDR/.vs/GaragensDR
+/codigo/GaragensDR/GaragensDR.Domain/bin/Debug/net7.0
+/codigo/GaragensDR/GaragensDR.Domain/obj
+/codigo/GaragensDR/GaragensDR.Infra.Data/bin/Debug/net7.0
+/codigo/GaragensDR/GaragensDR.Infra.Data/obj
+/codigo/GaragensDR/GaragensDR.Infra.Shared/bin/Debug/net7.0
+/codigo/GaragensDR/GaragensDR.Infra.Shared/obj
+/codigo/GaragensDR/GaragensDR.WebApi/bin/Debug/net7.0
+/codigo/GaragensDR/GaragensDR.WebApi/obj
