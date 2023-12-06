@@ -15,3 +15,6 @@
 /codigo/GaragensDR/GaragensDR.Application/obj
 /codigo/GaragensDR/GaragensDR.Application/bin/Debug/net7.0
 /codigo/GaragensDR/GaragensDR.WebApi/GaragensDR.WebApi.csproj.user
+/codigo/GaragensDR/GaragensDR.Infra.CrossCutting/bin/Debug/net7.0
+/codigo/GaragensDR/GaragensDR.Infra.CrossCutting/obj
+/codigo/GaragensDR/.vs/ProjectEvaluation
