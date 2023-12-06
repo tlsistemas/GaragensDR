@@ -19,11 +19,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Infra.Data", "Ga
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Domain", "GaragensDR.Domain\GaragensDR.Domain.csproj", "{9FDE8F64-876A-44AC-ADF0-783CDD75448D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Shared", "4.2 - Shared", "{931B1285-C54D-4D5B-BE98-9C998A0C5CF0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.3 - Shared", "4.3 - Shared", "{931B1285-C54D-4D5B-BE98-9C998A0C5CF0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Infra.Shared", "GaragensDR.Infra.Shared\GaragensDR.Infra.Shared.csproj", "{C222344A-2F94-4EB8-B321-2E25CA3D925B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Application", "GaragensDR.Application\GaragensDR.Application.csproj", "{4438CE62-80CE-4439-B2C9-3910286D4FDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{36B55192-20DE-4550-A1B1-1D1198AAC627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GaragensDR.Infra.CrossCutting", "GaragensDR.Infra.CrossCutting\GaragensDR.Infra.CrossCutting.csproj", "{C6FE93BB-16A2-42F0-BEDE-726A722152C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4438CE62-80CE-4439-B2C9-3910286D4FDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FE93BB-16A2-42F0-BEDE-726A722152C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FE93BB-16A2-42F0-BEDE-726A722152C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FE93BB-16A2-42F0-BEDE-726A722152C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FE93BB-16A2-42F0-BEDE-726A722152C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,8 @@ Global
 		{931B1285-C54D-4D5B-BE98-9C998A0C5CF0} = {A4AB79ED-F096-452E-B93B-260A3A0BF903}
 		{C222344A-2F94-4EB8-B321-2E25CA3D925B} = {931B1285-C54D-4D5B-BE98-9C998A0C5CF0}
 		{4438CE62-80CE-4439-B2C9-3910286D4FDC} = {0FA09C89-4312-4088-AC39-1E988A86BB79}
+		{36B55192-20DE-4550-A1B1-1D1198AAC627} = {A4AB79ED-F096-452E-B93B-260A3A0BF903}
+		{C6FE93BB-16A2-42F0-BEDE-726A722152C1} = {36B55192-20DE-4550-A1B1-1D1198AAC627}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {78DB5BED-3BDF-4954-8C06-BB11AEE20C16}
